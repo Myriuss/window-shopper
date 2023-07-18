@@ -8,9 +8,17 @@
 import UIKit
 
 class CurrencyTxtField: UITextField {
+    
+    override func prepareForInterfaceBuilder() {
+        custumizeView()
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        custumizeView()
+    }
+    
+    func custumizeView() {
         backgroundColor = #colorLiteral(red: 0.9999999404, green: 1, blue: 1, alpha: 0.2498937075)
         layer.cornerRadius = 5.0
         textAlignment = .center
@@ -22,8 +30,6 @@ class CurrencyTxtField: UITextField {
             attributedPlaceholder = place
             textColor =  #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
-        
     }
-    
 
 }
