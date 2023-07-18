@@ -28,11 +28,24 @@
                                     <constraint firstAttribute="width" constant="60" id="SIn-wZ-Y8B"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ecrit ici" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBy-Gc-9A5">
-                                <rect key="frame" x="30" y="180" width="333" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ecrit ici" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBy-Gc-9A5">
+                                <rect key="frame" x="30" y="180" width="333" height="52"/>
+                                <color key="backgroundColor" red="0.90951192010309279" green="0.90951192010309279" blue="0.90951192010309279" alpha="0.24497767857142858" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="3fy-N0-gGS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="8Bs-9G-ZT1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ecrit ici" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYe-hv-ABG">
+                                <rect key="frame" x="30" y="271" width="333" height="52"/>
+                                <color key="backgroundColor" red="0.90951192010000004" green="0.90951192010000004" blue="0.90951192010000004" alpha="0.2449776786" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="7z7-CQ-ocr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -40,11 +53,17 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Pgj-ZH-GgY" secondAttribute="bottom" id="41J-AY-q2c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VnL-nk-hcs" secondAttribute="trailing" constant="167" id="AhE-xU-AbT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KBy-Gc-9A5" secondAttribute="trailing" constant="30" id="EZ5-al-4sP"/>
+                            <constraint firstItem="KBy-Gc-9A5" firstAttribute="top" secondItem="VnL-nk-hcs" secondAttribute="bottom" constant="26" id="Tfd-1M-579"/>
+                            <constraint firstItem="CYe-hv-ABG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Y5o-jJ-eWg"/>
                             <constraint firstItem="VnL-nk-hcs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="e2B-nw-BJ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CYe-hv-ABG" secondAttribute="trailing" constant="30" id="iw0-Mn-Bpb"/>
                             <constraint firstItem="VnL-nk-hcs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="laz-8j-JqJ"/>
+                            <constraint firstItem="KBy-Gc-9A5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="liD-77-Bf4"/>
                             <constraint firstItem="Pgj-ZH-GgY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="myQ-KC-KD7"/>
                             <constraint firstItem="Pgj-ZH-GgY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oZC-92-uui"/>
                             <constraint firstItem="Pgj-ZH-GgY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w32-t4-Gcq"/>
+                            <constraint firstItem="CYe-hv-ABG" firstAttribute="top" secondItem="KBy-Gc-9A5" secondAttribute="bottom" constant="39" id="yy5-KQ-cBw"/>
                         </constraints>
                     </view>
                 </viewController>
